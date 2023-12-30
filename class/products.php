@@ -217,6 +217,7 @@ class Products
             ];
             header("HTTP/1.0 400 Bad Request");
         }
+        echo json_encode($data);
     
         return json_encode($data);
     }
